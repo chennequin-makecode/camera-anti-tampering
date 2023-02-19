@@ -1,7 +1,7 @@
 function AfficherNombre (num: number) {
     led.setBrightness(luminosité)
     basic.showNumber(num)
-    basic.pause(1000)
+    basic.pause(5000)
     for (let index = 0; index <= luminosité; index++) {
         led.setBrightness(luminosité - 1 * index)
         basic.pause(2)
@@ -88,7 +88,7 @@ while (true) {
     cpt,
     60
     )
-    basic.pause(100)
+    basic.pause(1000)
     cpt += 1
     if (cpt % 60 == 0) {
         cpt = 0
